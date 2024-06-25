@@ -1,0 +1,116 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - founder
+  - ask_courses
+  - ask_fees_datascience
+  - ask_fees_python
+  - ask_fees_mern
+  - ask_fees_testing
+  - ask_fees_flutter
+  - ask_duration_datascience
+  - ask_duration_python
+  - ask_duration_mern
+  - ask_duration_testing
+  - ask_duration_flutter
+  - ask_newbatch_datascience
+  - ask_newbatch_python
+  - ask_newbatch_mern
+  - ask_newbatch_testing
+  - ask_newbatch_flutter
+  - ask_location
+entities:
+  - course_name
+
+slots:
+  course_name:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: course_name
+
+responses:
+  utter_greet:
+  - text: "Welcome to LuminarTechnolab. How can I help you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_location:
+  - text: "Luminar Technolab Pvt Ltd\nGround Floor,K7 REALTY,\nJuma masjid road,\nSeaport - Airport Rd, near Opp: District Panchayat,\nKakkanad, Kochi, Kerala - 682030"
+
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_founder:
+  - text: "Rahul M Kumar"
+
+  utter_ask_courses:
+  - text: "We offer the following courses: Data Science, Python Django, Mearn stack, Testing, and Flutter."
+
+  utter_fee_Data_Science:
+  - text: "The fee for Data Science is ₹72,000 for EMI Mode and ₹64,500 for One-time Payment Mode"
+
+  utter_fee_Python_Django:
+  - text: "The fee for Python django is ₹45,000 for EMI Mode and ₹39,500 for One-time Payment Mode."
+
+  utter_fee_Mearn_stack:
+  - text: "The fee for Mearn stack is ₹55,000 for EMI Mode and ₹49,500 for One-time Payment Mode."
+
+  utter_fee_Testing:
+  - text: "The fee for testing is ₹55,000 for EMI Mode and ₹49,500 for One-time Payment Mode."
+
+  utter_fee_Flutter:
+  - text: "The fee for flutter is ₹55,000 for EMI Mode and ₹49,500 for One-time Payment Mode."
+
+  utter_duration_Data_Science:
+  - text: "The duration of Data Science is 7 Months, 5 Days a Week, 1.5 - 2 Hours/day."
+
+  utter_duration_Python_Django:
+  - text: "The duration of Python Django is 4 months,5 Days a Week, 1.5 - 2 Hours/day."
+
+  utter_duration_Mearn_stack:
+  - text: "The duration of Mearn stack is 4 months,5 Days a Week, 1.5 - 2 Hours/day."
+
+  utter_duration_Testing:
+  - text: "The duration of Testing is 4 months,5 Days a Week, 1.5 - 2 Hours/day."
+
+  utter_duration_Flutter:
+  - text: "The duration of Flutter is 4 months,5 Days a Week, 1.5 - 2 Hours/day."
+
+  utter_newbatch_Data_Science:
+  - text: "Cochin : Aug 12th 2024 (Offline & Online)\nCalicut : Sep 18th 2024 (Offline)"
+
+  utter_newbatch_Python_Django:
+  - text: "Cochin : July 17th 2024 (Offline & Online)\nCalicut : June 17th 2024 (Offline Only)"
+
+  utter_newbatch_Mearn_stack:
+  - text: "Cochin : Aug 12th 2024 (Offline & Online)\nCalicut : June 19th 2024 (Offline)"
+
+  utter_newbatch_Testing:
+  - text: "Cochin : July 17th 2024 (Offline & Online)\nCalicut : June 19th 2024 (Offline Only)"
+
+  utter_newbatch_Flutter:
+  - text: "Cochin : June 19th 2024 (Offline & Online)\nCalicut : June 19th 2024 (Offline Only)"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
