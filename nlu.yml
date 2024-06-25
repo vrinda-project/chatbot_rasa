@@ -1,0 +1,243 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremely sad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: founder
+  examples: |
+    - who is the CEO?
+    - Who is the founder?
+    - Who started this company?
+    - Who founded this organization?
+    - Who is the creator?
+    - Tell me about the CEO.
+    - Can you tell me who the founder is?
+    - Do you know who founded this?
+
+- intent: ask_location
+  examples: |
+    - Where is it located?
+    - Can you tell me where it is?
+    - Where exactly is it located?
+  
+- intent: ask_courses
+  examples: |
+    - What courses do you offer?
+    - List all courses.
+    - Can you tell me about your courses?
+
+- intent: ask_fees_datascience
+  examples: |
+    - What is the fee for Data Science?
+    - How much does Data science cost?
+    - Tell me the fees for Data Science.
+    - How much is the fee for Data Science?
+    - What is the cost of Data Science?
+  
+- intent: ask_fees_python
+  examples: |
+    - What is the fee for Python Django?
+    - How much does python cost?
+    - Tell me the fees for Python Django.
+    - How much is the fee for Python?
+    - What is the cost of Python Django?
+
+- intent: ask_fees_mern
+  examples: |
+    - What is the fee for Mern Stack?
+    - How much does Mern Stack cost?
+    - Tell me the fees for Mern Stack.
+    - How much is the fee for Mern Stack?
+    - What is the cost of Mern Stack?
+
+- intent: ask_fees_testing
+  examples: |
+    - What is the fee for Software testing?
+    - How much does  Software testing cost?
+    - Tell me the fees for Software testing.
+    - How much is the fee for Software testing?
+    - What is the cost of Software testing?
+
+- intent: ask_fees_flutter
+  examples: |
+    - What is the fee for flutter?
+    - How much does  flutter cost?
+    - Tell me the fees for flutter.
+    - How much is the fee for flutter?
+    - What is the cost of flutter?
+
+- intent: ask_duration_datascience
+  examples: |
+   - How long does a Data science course usually take?
+    - What is the duration of a typical Data science training program?
+    - How many weeks does it take to complete a Data science course?
+    - Can you tell me the duration of a Data science programming course?
+    - How long will it take to learn Data science?
+  
+- intent: ask_duration_python
+  examples: |
+    - How long does a Python course usually take?
+    - What is the duration of a typical Python Django training program?
+    - How many weeks does it take to complete a Python Django course?
+    - Can you tell me the duration of a Python Django programming course?
+    - How long will it take to learn Python Django?
+
+- intent: ask_duration_mern
+  examples: |
+    - How long does a Mearn stack course usually take?
+    - What is the duration of a typical  Mearn stack training program?
+    - How many weeks does it take to complete a  Mearn stack course?
+    - Can you tell me the duration of a  Mearn stack programming course?
+    - How long will it take to learn  Mearn stack?
+
+- intent: ask_duration_testing
+  examples: |
+    - How long does a Software Testing course usually take?
+    - What is the duration of a typical   Software Testing training program?
+    - How many weeks does it take to complete a  Software Testing course?
+    - Can you tell me the duration of a  Software Testing programming course?
+    - How long will it take to learn   Software Testing?
+
+- intent: ask_duration_flutter
+  examples: |
+    - How long does a Flutter course usually take?
+    - What is the duration of a typical   Flutter training program?
+    - How many weeks does it take to complete a  Flutter course?
+    - Can you tell me the duration of a  Flutter programming course?
+    - How long will it take to learn   Flutter?
+    
+- intent: ask_newbatch_datascience
+  examples: |
+    - When does the new  Data Science batch for  start?
+    - What is the start date for the next Data Science batch?
+    - When is the next Data Science batch beginning?
+    - Can you tell me when the new  Data Sciencebatch will commence?
+    - What is the commencement date of the new  Data Science batch?
+    - When will the next Data Science batch of the course start?
+    - What is the starting date for the upcoming Data Science batch?
+  
+- intent: ask_newbatch_python
+  examples: |
+    - When does the new Python Django batch start?
+    - What is the start date for the next Python Django batch?
+    - When is the next Python Django batch beginning?
+    - Can you tell me when the new Python Django batch will commence?
+    - What is the commencement date of the new Python Django batch?
+    - When will the next Python Django batch of the course start?
+    - What is the starting date for the upcoming Python Django batch?
+
+- intent: ask_newbatch_mern
+  examples: |
+    - When does the new Mearn stack batch start?
+    - What is the start date for the next Mearn stack batch?
+    - When is the next Mearn stack batch beginning?
+    - Can you tell me when the new Mearn stack batch will commence?
+    - What is the commencement date of the new Mearn stack batch?
+    - When will the next Mearn stack batch of the course start?
+    - What is the starting date for the upcoming Mearn stack batch?
+
+- intent: ask_newbatch_testing
+  examples: |
+    - When does the new Software Testing batch start?
+    - What is the start date for the next Software Testing batch?
+    - When is the next Software Testing batch beginning?
+    - Can you tell me when the new Software Testing batch will commence?
+    - What is the commencement date of the new Software Testing batch?
+    - When will the next Software Testing batch of the course start?
+    - What is the starting date for the upcoming Software Testing batch?
+
+- intent: ask_newbatch_flutter
+  examples: |
+    - When does the new Flutter batch start?
+    - What is the start date for the next Flutter batch?
+    - When is the next Flutter batch beginning?
+    - Can you tell me when the new Flutter batch will commence?
+    - What is the commencement date of the new Flutter batch?
+    - When will the next Flutter batch of the course start?
+    - What is the starting date for the upcoming Flutter batch?
