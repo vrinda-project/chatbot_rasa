@@ -1,0 +1,121 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: founder
+  steps:
+  - intent: founder
+  - action: utter_founder
+
+- story: locations
+  steps:
+  - intent: ask_location
+  - action: utter_location
+
+- story: course
+  steps:
+  - intent: ask_courses
+  - action: utter_ask_courses
+
+- story: fee_datascience
+  steps:
+  - intent: ask_fees_datascience
+  - action: utter_fee_Data_Science
+
+- story: fees_python
+  steps:
+  - intent: ask_fees_python
+  - action: utter_fee_Python_Django
+
+- story: fees_mearn
+  steps:
+  - intent: ask_fees_mern
+  - action: utter_fee_Mearn_stack
+
+- story: fees_test
+  steps:
+  - intent: ask_fees_testing
+  - action: utter_fee_Testing
+
+- story: fees_flutter
+  steps:
+  - intent: ask_fees_flutter
+  - action: utter_fee_Flutter
+
+
+- story: duration_datascience
+  steps:
+  - intent: ask_duration_datascience
+  - action: utter_duration_Data_Science  
+
+- story: duration_python
+  steps:
+  - intent: ask_duration_python
+  - action: utter_duration_Python_Django
+
+- story: duration_mearn
+  steps:
+  - intent: ask_duration_mern
+  - action: utter_duration_Mearn_stack
+
+- story: duration_test
+  steps:
+  - intent: ask_duration_testing
+  - action: utter_duration_Testing
+
+- story: duration_flutter
+  steps:
+  - intent: ask_duration_flutter
+  - action: utter_duration_Flutter
+
+- story: new_datascience
+  steps:
+  - intent: ask_newbatch_datascience
+  - action: utter_newbatch_Data_Science  
+
+- story: new_python
+  steps:
+  - intent: ask_newbatch_python
+  - action: utter_newbatch_Python_Django
+
+- story: new_mearn
+  steps:
+  - intent: ask_newbatch_mern
+  - action: utter_newbatch_Mearn_stack
+
+- story: new_test
+  steps:
+  - intent: ask_newbatch_testing
+  - action: utter_newbatch_Testing
+
+- story: new_flutter
+  steps:
+  - intent: ask_newbatch_flutter
+  - action: utter_newbatch_Flutter
